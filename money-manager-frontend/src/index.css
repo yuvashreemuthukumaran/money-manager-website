@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Base */
+    --background: 0 0% 100%;
+    --foreground: 265 35% 16%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 265 35% 16%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 265 35% 16%;
+
+    /* 🟣 DEEP PRIMARY PURPLE */
+    --primary: 265 85% 45%;              /* 👈 deeper */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 265 35% 96%;
+    --secondary-foreground: 265 35% 16%;
+
+    --muted: 265 35% 95%;
+    --muted-foreground: 265 15% 42%;
+
+    --accent: 265 40% 92%;
+    --accent-foreground: 265 35% 16%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 265 25% 88%;
+    --input: 265 25% 88%;
+    --ring: 265 85% 45%;
+
+    --radius: 0.75rem;
+
+    /* 💰 Finance tokens */
+    --income: 152 65% 38%;
+    --income-foreground: 0 0% 100%;
+    --income-muted: 152 55% 94%;
+
+    --expense: 0 80% 55%;
+    --expense-foreground: 0 0% 100%;
+    --expense-muted: 0 75% 95%;
+
+    --balance: 265 85% 45%;
+    --balance-foreground: 0 0% 100%;
+    --balance-muted: 265 70% 94%;
+
+    /* Surfaces */
+    --surface-elevated: 0 0% 100%;
+    --surface-sunken: 265 35% 98%;
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 265 35% 16%;
+    --sidebar-primary: 265 85% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 265 35% 96%;
+    --sidebar-accent-foreground: 265 35% 16%;
+    --sidebar-border: 265 25% 88%;
+    --sidebar-ring: 265 85% 45%;
+  }
+
+  /* 🌙 DARK MODE — DEEP GRAPE */
+  .dark {
+    --background: 265 45% 6%;
+    --foreground: 0 0% 98%;
+
+    --card: 265 45% 9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 265 45% 9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 265 85% 60%;
+    --primary-foreground: 265 45% 6%;
+
+    --secondary: 265 30% 16%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 265 30% 16%;
+    --muted-foreground: 265 15% 65%;
+
+    --accent: 265 30% 16%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62% 35%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 265 30% 16%;
+    --input: 265 30% 16%;
+    --ring: 265 85% 60%;
+
+    --income: 152 65% 42%;
+    --income-muted: 152 40% 15%;
+
+    --expense: 4 85% 55%;
+    --expense-muted: 4 40% 15%;
+
+    --balance: 265 85% 60%;
+    --balance-muted: 265 45% 15%;
+
+    --surface-elevated: 265 45% 11%;
+    --surface-sunken: 265 45% 5%;
+
+    --sidebar-background: 265 45% 8%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 265 85% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 265 45% 15%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 265 45% 15%;
+    --sidebar-ring: 265 85% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass-effect {
+    @apply backdrop-blur-xl bg-white/75 dark:bg-black/40;
+  }
+
+  .card-shadow {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05),
+                0 1px 2px -1px rgb(0 0 0 / 0.05);
+  }
+
+  .card-shadow-hover {
+    box-shadow: 0 8px 20px -4px rgb(0 0 0 / 0.12);
+  }
+}

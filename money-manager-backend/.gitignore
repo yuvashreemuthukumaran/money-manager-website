@@ -1,0 +1,171 @@
+# 💰 MoneyFlow – Personal & Office Expense Tracker
+
+MoneyFlow is a modern full-stack web application to track **personal and office finances** with real-time insights, clean UI, and powerful analytics.
+
+---
+
+## 🚀 Features
+
+- 📊 **Dashboard Analytics**
+  - Total Income, Expense & Balance
+  - Category-wise expense breakdown
+  - Personal vs Office comparison
+- 🧾 **Transaction Management**
+  - Add, edit, delete transactions
+  - Income & Expense tracking
+- 🗂️ **Smart Filters**
+  - Date range
+  - Category
+  - Division (Personal / Office)
+- 🎨 **Modern UI**
+  - Deep purple theme
+  - Responsive design
+  - Smooth animations
+- 🌙 **Dark Mode Support**
+- ⚡ **Real-time updates**
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React + TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+
+---
+
+## 📂 Project Structure
+
+# 💰 MoneyFlow – Personal & Office Expense Tracker
+
+MoneyFlow is a modern full-stack web application to track **personal and office finances** with real-time insights, clean UI, and powerful analytics.
+
+---
+
+## 🚀 Features
+
+- 📊 **Dashboard Analytics**
+  - Total Income, Expense & Balance
+  - Category-wise expense breakdown
+  - Personal vs Office comparison
+- 🧾 **Transaction Management**
+  - Add, edit, delete transactions
+  - Income & Expense tracking
+- 🗂️ **Smart Filters**
+  - Date range
+  - Category
+  - Division (Personal / Office)
+- 🎨 **Modern UI**
+  - Deep purple theme
+  - Responsive design
+  - Smooth animations
+- 🌙 **Dark Mode Support**
+- ⚡ **Real-time updates**
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React + TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+
+---
+
+## 📂 Project Structure
+
+money-manager/
+│
+├── money-manager-backend/
+│ ├── routes/
+│ ├── models/
+│ ├── controllers/
+│ ├── index.js
+│ └── package.json
+│
+├── money-manager-frontend/
+│ ├── src/
+│ │ ├── components/
+│ │ ├── pages/
+│ │ ├── hooks/
+│ │ ├── utils/
+│ │ ├── App.tsx
+│ │ └── main.tsx
+│ ├── public/
+│ ├── tailwind.config.ts
+│ └── package.json
+
+
+---
+
+## ⚙️ How to Run Locally
+
+### Backend
+```bash
+cd money-manager-backend
+npm install
+npm run dev
+
+
+Server runs at:
+http://localhost:5000
+
+Frontend
+cd money-manager-frontend
+npm install
+npm run dev
+
+
+App runs at:
+http://localhost:5173
+
+🔗 API Endpoints
+
+POST /api/transactions
+
+GET /api/transactions
+
+PUT /api/transactions/:id
+
+DELETE /api/transactions/:id
+
+GET /api/analytics/summary
+
+📸 Screenshots
+
+Add screenshots of:
+
+Landing Page
+
+Dashboard
+
+Transaction History
+
+🏁 Submission Notes
+
+Fully functional full-stack application
+
+Clean UI & responsive design
+
+Backend integrated with MongoDB
+
+👩‍💻 Author
+
+Yuvashree M
+B.Tech – Computer Science & Business Systems
